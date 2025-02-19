@@ -23,14 +23,14 @@
 
     // import type { Accouting } from "$lib/types.ts";
 
-    const availableRowsPerPage: number[] = [5, 10, 20, 50];
-
     /* Table and properties */
-    const table = new TableHandler(accountings, {
-        rowsPerPage: 20,
-        highlight: true,
-        selectBy: "Id",
-    });
+    const table = $state(
+        new TableHandler(accountings, {
+            rowsPerPage: 20,
+            highlight: true,
+            selectBy: "Id",
+        }),
+    );
 
     /* Searching properties */
     const search = table.createSearch();
@@ -80,6 +80,13 @@
         table.createCalculation("Importo").sum(),
     );
 
+    const availableRowsPerPage: number[] = [
+        5,
+        10,
+        20,
+        50,
+        table.rowCount.total,
+    ];
     const csv = table.createCSV();
 </script>
 
@@ -112,54 +119,103 @@
 
 <div class="flex justify-start align-middle gap-10">
     <!-- Left side panel -->
-        <aside
-            class="flex flex-col h-full bg-gray-100 p-4 rounded-lg shadow-md w-64 gap-5"
-        >
-            <!-- Toggle collumns checkboxes -->
-            <div id="collumns-toggle">
-                {#each view.columns as column}
-                    <div class="flex items-center space-x-2 mb-2">
-                        <input
-                            type="checkbox"
-                            checked={column.isVisible}
-                            onchange={() => column.toggle()}
-                            class="w-4 h-4 rounded border-gray-300 focus:ring-blue-500"
-                        />
-                        <button
-                            class="text-gray-700 hover:bg-sky-200"
-                            onclick={() => column.toggle()()}
-                            >{column.name}</button
-                        >
-                    </div>
-                {/each}
-            </div>
-
-            <!-- Utilities -->
-            <div class="flex flex-col h-full justify-center gap-5">
-                <!-- Download CSV -->
-                <button
-                    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-                    onclick={() => csv.download("accoutings.csv")}
-                    >Download as CSV</button
-                >
-                <!-- Rows -->
-                <div class="align-middle justify-between flex gap-2">
-                    <p>Rows:</p>
-                    <select
-                        class="border-1 border-blue-500"
-                        bind:value={table.rowsPerPage}
-                        onchange={() => table.setPage(1)}
+    <aside
+        class="flex flex-col h-full bg-gray-100 p-4 rounded-lg shadow-md w-64 gap-5"
+    >
+        <!-- Toggle collumns checkboxes -->
+        <div id="collumns-toggle">
+            {#each view.columns as column}
+                <div class="flex items-center space-x-2 mb-2">
+                    <input
+                        type="checkbox"
+                        checked={column.isVisible}
+                        onchange={() => column.toggle()}
+                        class="w-4 h-4 rounded border-gray-300 focus:ring-blue-500"
+                    />
+                    <button
+                        class="text-gray-700 hover:bg-sky-200"
+                        onclick={() => column.toggle()()}>{column.name}</button
                     >
-                        {#each availableRowsPerPage as value}
-                            <option {value}>{value}</option>
-                        {/each}
-                    </select>
+                </div>
+            {/each}
+        </div>
+
+        <!-- Utilities -->
+        <div class="flex flex-col h-full justify-center gap-5">
+            <div>
+                <div class="w-full max-w-sm">
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="Filter"
+                            bind:value={search.value}
+                            oninput={oninputSearch}
+                            class="w-full px-4 py-2 text-gray-900 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 border-gray-300"
+                        />
+                        <svg
+                            class="absolute right-3 top-2.5 h-5 w-5 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-4.35-4.35M16.5 10.5a6 6 0 1 0-12 0 6 6 0 0 0 12 0z"
+                            />
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </aside>
+
+            <!-- Download CSV -->
+            <button
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                onclick={() => csv.download("accoutings.csv")}
+                >Download as CSV</button
+            >
+
+            <!-- Rows -->
+            <div class="align-middle justify-between flex gap-2">
+                <p>Rows:</p>
+                <select
+                    class="border-1 border-blue-500"
+                    bind:value={table.rowsPerPage}
+                    onchange={() => table.setPage(1)}
+                >
+                    {#each availableRowsPerPage as value}
+                        <option {value}>{value}</option>
+                    {/each}
+                </select>
+            </div>
+        </div>
+
+        <!-- Complessivi contabili -->
+        <div class="flex flex-col h-full justify-between gap-2">
+            <div class="flex justify-between">
+                <p class="text-sm text-gray-700 font-medium">Imponibile:</p>
+                <p class="text-sm text-gray-700 font-medium">
+                    {euroFormat.format(ImponibileComplessivo)}
+                </p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-sm text-gray-700 font-medium">Imponibile:</p>
+                <p class="text-sm text-gray-700 font-medium">
+                    {euroFormat.format(ImpostaComplessiva)}
+                </p>
+            </div>
+            <div class="flex justify-between">
+                <p class="text-sm text-gray-700 font-medium">Imponibile:</p>
+                <p class="text-sm text-gray-700 font-medium">
+                    {euroFormat.format(ImportoComplessivo)}
+                </p>
+            </div>
+        </div>
+    </aside>
 
     <Datatable {table}>
-        <input type="text" bind:value={search.value} oninput={oninputSearch} />
         <table>
             <thead>
                 <tr>
@@ -207,18 +263,6 @@
                         {@render tableRow(accounting)}
                     </tr>
                 {/each}
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>{euroFormat.format(ImponibileComplessivo)}</td>
-                    <td>{euroFormat.format(ImpostaComplessiva)}</td>
-                    <td>{euroFormat.format(ImportoComplessivo)}</td>
-                </tr>
             </tbody>
         </table>
 

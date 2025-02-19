@@ -8,7 +8,10 @@
     import type { Accouting } from "./DataTable.svelte";
     import DataTable from "./DataTable.svelte";
 
-    const routes: TNavItem[] = [{ route: "/emesse", title: "Emesse" }];
+    const routes: TNavItem[] = [
+        { id: "E", title: "Emesse" },
+        { id: "R", title: "Ricevute" },
+    ];
     const accountings: Accouting[] = data.accountings;
 </script>
 
