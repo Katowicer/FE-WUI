@@ -1,5 +1,5 @@
 <script lang="ts">
-    type TNavItem = { title: string; route: string };
+    export type TNavItem = { title: string; route: string };
     let { routes } = $props<{ routes: TNavItem[] }>();
 </script>
 
