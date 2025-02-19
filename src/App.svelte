@@ -4,7 +4,7 @@
         type TNavItem,
     } from "./lib/components/ui/Navbar/Navbar.svelte";
 
-    import data from "../../accountings.json";
+    import data from "./lib/data/accoutings_test.json";
     import type { Accouting } from "./DataTable.svelte";
     import DataTable from "./DataTable.svelte";
 

@@ -1,6 +1,5 @@
 <script lang="ts">
-
-    /* Todo: costumize DataTable: https://vincjo.fr/datatables/docs/client/getting-started/intro */ 
+    /* Todo: costumize DataTable: https://vincjo.fr/datatables/docs/client/getting-started/intro */
 
     export type Accouting = {
         Id: string;
@@ -62,6 +61,11 @@
 
     const dateLanguage = "it-IT";
 
+    let euroFormat = Intl.NumberFormat("it-IT", {
+        style: "currency",
+        currency: "EUR",
+    });
+
     /* Event handlers */
     function oninputSearch() {
         search.set();
@@ -91,9 +95,9 @@
         <td>{Mittente}</td>
         <td>{TipoDocumento}</td>
         <td>{Descrizione}</td>
-        <td>{Imponibile}</td>
-        <td>{Imposta}</td>
-        <td>{Importo}</td>
+        <td>{euroFormat.format(Imponibile)}</td>
+        <td>{euroFormat.format(Imposta)}</td>
+        <td>{euroFormat.format(Importo)}</td>
     </tr>
 {/snippet}
 
@@ -132,21 +136,26 @@
     </table>
     <footer>
         <select
+            class="mx-2 px-2 border-1 border-blue-500"
             bind:value={table.rowsPerPage}
             onchange={() => table.setPage(1)}
         >
-            {#each availableRowsPerPage}
-                <option value={availableRowsPerPage}
-                    >{availableRowsPerPage}</option
-                >
+            {#each availableRowsPerPage as value}
+                <option {value}>{value}</option>
             {/each}
         </select>
-        <p>Showing {start} to {end} of {total} rows</p>
-        {#each table.pagesWithEllipsis as page}
-            <button
-                class:active={page === table.currentPage}
-                onclick={() => table.setPage(page)}>{page ?? "..."}</button
-            >
-        {/each}
+        <div>
+            <p class="mx-2 py-2">Showing {start} to {end} of {total} rows</p>
+            <div class="flex justify-start align-middle">
+                {#each table.pagesWithEllipsis as page}
+                    <button
+                        class="mx-2 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                        class:active={page === table.currentPage}
+                        onclick={() => table.setPage(page)}
+                        >{page ?? "..."}</button
+                    >
+                {/each}
+            </div>
+        </div>
     </footer>
 </Datatable>
