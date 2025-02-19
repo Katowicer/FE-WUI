@@ -1,6 +1,9 @@
 <script lang="ts">
     export type TNavItem = { title: string; id: string };
-    let { routes } = $props<{ routes: TNavItem[] }>();
+    let { selected = $bindable(), routes } = $props<{
+        routes: TNavItem[];
+        selected: any;
+    }>();
 </script>
 
 <nav class="flex justify-center align-middle p-4">
@@ -8,6 +11,7 @@
         <div class="relative">
             <select
                 class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+                bind:value={selected}
             >
                 {#each routes as route}
                     <option value={route.id}>{route.title}</option>
