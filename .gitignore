@@ -27,7 +27,5 @@ dist-ssr
 .devbox 
 devbox.lock
 
-package-lock.json
-
 # Code
 .vscode
