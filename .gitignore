@@ -29,4 +29,5 @@ devbox.lock
 
 package-lock.json
 
-src/lib/data
+# Code
+.vscode
