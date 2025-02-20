@@ -40,15 +40,15 @@
 
     /* Column view */
     const view = table.createView([
-        { index: 0, name: "Id", isFrozen: true },
-        { index: 1, name: "Data" },
-        { index: 2, name: "Destinatario" },
-        { index: 3, name: "Mittente", isFrozen: true },
-        { index: 4, name: "TipoDocumento" },
-        { index: 5, name: "Descrizione" },
-        { index: 6, name: "Imponibile" },
-        { index: 7, name: "Imposta" },
-        { index: 8, name: "Importo" },
+        { index: 1, name: "Id" },
+        { index: 2, name: "Data" },
+        { index: 3, name: "Destinatario" },
+        { index: 4, name: "Mittente" },
+        { index: 5, name: "TipoDocumento" },
+        { index: 6, name: "Descrizione" },
+        { index: 7, name: "Imponibile" },
+        { index: 8, name: "Imposta" },
+        { index: 9, name: "Importo" },
     ]);
 
     /* Output formats */
@@ -215,6 +215,7 @@
         </div>
     </aside>
 
+    <!-- Table -->
     <Datatable {table}>
         <table>
             <thead>
