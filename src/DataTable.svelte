@@ -201,13 +201,13 @@
                 </p>
             </div>
             <div class="flex justify-between">
-                <p class="text-sm text-gray-700 font-medium">Imponibile:</p>
+                <p class="text-sm text-gray-700 font-medium">Imposta:</p>
                 <p class="text-sm text-gray-700 font-medium">
                     {euroFormat.format(ImpostaComplessiva)}
                 </p>
             </div>
             <div class="flex justify-between">
-                <p class="text-sm text-gray-700 font-medium">Imponibile:</p>
+                <p class="text-sm text-gray-700 font-medium">Importo:</p>
                 <p class="text-sm text-gray-700 font-medium">
                     {euroFormat.format(ImportoComplessivo)}
                 </p>
