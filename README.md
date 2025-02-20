@@ -91,4 +91,4 @@ Spin a docker container via the provided [Dockerfile](./Dockerfile).
 A [devcontainer environment](./.devcontainer)in also provided.
 
 ## .env
-Enalbe [Direnv](https://direnv.net/) integration using the [](./.envrc) provieded
+Enable [Direnv](https://direnv.net/) integration using the [.envrc](./.envrc) provieded
