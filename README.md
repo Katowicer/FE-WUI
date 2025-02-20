@@ -1,5 +1,5 @@
 # FE-WUI
-Web user interfaceto manage costum views of Fatture Elettroniche (Agenzia delle Entrate)
+Web user interface to manage custom views of Fatture Elettroniche (Agenzia delle Entrate)
 <br />
 Live demo: https://katowicer.github.io/FE-WUI/
 
