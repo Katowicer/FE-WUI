@@ -4,7 +4,9 @@
         type TNavItem,
     } from "./lib/components/ui/Navbar/Navbar.svelte";
 
-    import data from "./lib/data/accoutings_ricevute_test.json";
+    import ricevute from "./lib/data/accoutings_ricevute_test.json" assert { type: "json" };
+    import emesse from "./lib/data/accoutings_emesse_test.json" assert { type: "json" };
+
     import type { Accouting } from "./DataTable.svelte";
     import DataTable from "./DataTable.svelte";
 
@@ -14,7 +16,9 @@
     ];
 
     let selected = $state(routes[0].id);
-    const accountings: Accouting[] = data.accountings;
+
+    let accountingsR: Accouting[] = ricevute;
+    let accountingsE: Accouting[] = emesse;
 </script>
 
 <div class="flex justify-evenly pt-2 align-middle">
@@ -23,10 +27,8 @@
 </div>
 <main>
     {#if selected == "E"}
-        <div class="flex justify-center align-middle">
-            <p class="text-red-500 text-2xl">Work in progeress!</p>
-        </div>
+        <DataTable accountings={accountingsE} />
     {:else if selected == "R"}
-        <DataTable {accountings} />
+        <DataTable accountings={accountingsR} />
     {/if}
 </main>

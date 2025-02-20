@@ -115,6 +115,40 @@
     <td>{@html euroFormat.format(Imponibile)}</td>
     <td>{@html euroFormat.format(Imposta)}</td>
     <td>{@html euroFormat.format(Importo)}</td>
+    <td
+        ><a href={`HTML/${Id}.html`} aria-labelledby="html"
+            ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-fill"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2m5.5 1.5v2a1 1 0 0 0 1 1h2z"
+                />
+            </svg></a
+        ></td
+    >
+
+    <td
+        ><a href={`XML/${Id}.xml`} aria-labelledby="xml">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-filetype-xml"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.527 11.85h-.893l-.823 1.439h-.036L.943 11.85H.012l1.227 1.983L0 15.85h.861l.853-1.415h.035l.85 1.415h.908l-1.254-1.992zm.954 3.999v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596h-.025L4.58 11.85h-.806v3.999zm4.71-.674h1.696v.674H8.4V11.85h.791z"
+                />
+            </svg></a
+        ></td
+    >
 {/snippet}
 
 <div class="flex justify-start align-middle gap-10">
@@ -129,12 +163,16 @@
                     <input
                         type="checkbox"
                         checked={column.isVisible}
-                        onchange={() => column.toggle()}
+                        onchange={() => {
+                            column.toggle();
+                        }}
                         class="w-4 h-4 rounded border-gray-300 focus:ring-blue-500"
                     />
                     <button
                         class="text-gray-700 hover:bg-sky-200"
-                        onclick={() => column.toggle()()}>{column.name}</button
+                        onclick={() => {
+                            column.toggle();
+                        }}>{column.name}</button
                     >
                 </div>
             {/each}
@@ -221,15 +259,17 @@
             <thead>
                 <tr>
                     <td></td>
-                    <ThSort {table} field="Id">Id</ThSort>
-                    <ThSort {table} field="Data">Data</ThSort>
-                    <ThSort {table} field="Destinatario">Destinatario</ThSort>
-                    <ThSort {table} field="Mittente">Mittente</ThSort>
-                    <ThSort {table} field="TipoDocumento">TipoDocumento</ThSort>
-                    <ThSort {table} field="Descrizione">Descrizione</ThSort>
-                    <ThSort {table} field="Imponibile">Imponibile</ThSort>
-                    <ThSort {table} field="Imposta">Imposta</ThSort>
-                    <ThSort {table} field="Importo">Importo</ThSort>
+                    <ThSort {table} field={"Id"}>Id</ThSort>
+                    <ThSort {table} field={"Data"}>Data</ThSort>
+                    <ThSort {table} field={"Destinatario"}>Destinatario</ThSort>
+                    <ThSort {table} field={"Mittente"}>Mittente</ThSort>
+                    <ThSort {table} field={"TipoDocumento"}
+                        >TipoDocumento</ThSort
+                    >
+                    <ThSort {table} field={"Descrizione"}>Descrizione</ThSort>
+                    <ThSort {table} field={"Imponibile"}>Imponibile</ThSort>
+                    <ThSort {table} field={"Imposta"}>Imposta</ThSort>
+                    <ThSort {table} field={"Importo"}>Importo</ThSort>
                 </tr>
                 <tr>
                     <td class="mx-5 flex gap-2">
@@ -240,15 +280,15 @@
                         />
                         <p>All</p>
                     </td>
-                    <ThFilter {table} field="Id" />
-                    <ThFilter {table} field="Data" />
-                    <ThFilter {table} field="Destinatario" />
-                    <ThFilter {table} field="Mittente" />
-                    <ThFilter {table} field="TipoDocumento" />
-                    <ThFilter {table} field="Descrizione" />
-                    <ThFilter {table} field="Imponibile" />
-                    <ThFilter {table} field="Imposta" />
-                    <ThFilter {table} field="Importo" />
+                    <ThFilter {table} field={"Id"} />
+                    <ThFilter {table} field={"Data"} />
+                    <ThFilter {table} field={"Destinatario"} />
+                    <ThFilter {table} field={"Mittente"} />
+                    <ThFilter {table} field={"TipoDocumento"} />
+                    <ThFilter {table} field={"Descrizione"} />
+                    <ThFilter {table} field={"Imponibile"} />
+                    <ThFilter {table} field={"Imposta"} />
+                    <ThFilter {table} field={"Importo"} />
                 </tr>
             </thead>
             <tbody>
