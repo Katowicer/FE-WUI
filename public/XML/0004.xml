@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0004</Id>
+        <Data>2026-01-09</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>XYZ LTD</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Business agreement</Descrizione>
+        <Imponibile>7390</Imponibile>
+        <Imposta>1478</Imposta>
+        <Importo>8868</Importo>
+    </record>
+    

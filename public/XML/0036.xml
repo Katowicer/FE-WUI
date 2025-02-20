@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0036</Id>
+        <Data>2025-02-04</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>RECEIPT</TipoDocumento>
+        <Descrizione>Annual report</Descrizione>
+        <Imponibile>6029</Imponibile>
+        <Imposta>1205</Imposta>
+        <Importo>7234</Importo>
+    </record>
+    

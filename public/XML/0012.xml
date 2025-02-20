@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0012</Id>
+        <Data>2026-01-23</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>BANK LTD</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Business agreement</Descrizione>
+        <Imponibile>8067</Imponibile>
+        <Imposta>1613</Imposta>
+        <Importo>9680</Importo>
+    </record>
+    

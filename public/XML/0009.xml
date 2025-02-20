@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0009</Id>
+        <Data>2025-01-19</Data>
+        <Mittente>ACME CORP</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Software development proposal</Descrizione>
+        <Imponibile>2134</Imponibile>
+        <Imposta>426</Imposta>
+        <Importo>2560</Importo>
+    </record>
+    

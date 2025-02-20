@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0021</Id>
+        <Data>2025-08-13</Data>
+        <Mittente>ACME CORP</Mittente>
+        <Destinatario>INNOVATE INC</Destinatario>
+        <TipoDocumento>QUOTE</TipoDocumento>
+        <Descrizione>Shipment invoice</Descrizione>
+        <Imponibile>6057</Imponibile>
+        <Imposta>1211</Imposta>
+        <Importo>7268</Importo>
+    </record>
+    

@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0056</Id>
+        <Data>2026-03-17</Data>
+        <Mittente>TECH SOLUTIONS</Mittente>
+        <Destinatario>BANK LTD</Destinatario>
+        <TipoDocumento>QUOTE</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>9122</Imponibile>
+        <Imposta>1824</Imposta>
+        <Importo>10946</Importo>
+    </record>
+    

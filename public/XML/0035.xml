@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0035</Id>
+        <Data>2026-07-06</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>BANK LTD</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>7827</Imponibile>
+        <Imposta>1565</Imposta>
+        <Importo>9392</Importo>
+    </record>
+    

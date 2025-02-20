@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0090</Id>
+        <Data>2026-09-30</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>JANE DOE</Destinatario>
+        <TipoDocumento>PURCHASE ORDER</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>8395</Imponibile>
+        <Imposta>1679</Imposta>
+        <Importo>10074</Importo>
+    </record>
+    

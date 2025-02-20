@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0025</Id>
+        <Data>2025-02-01</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>RECEIPT</TipoDocumento>
+        <Descrizione>Business agreement</Descrizione>
+        <Imponibile>8226</Imponibile>
+        <Imposta>1645</Imposta>
+        <Importo>9871</Importo>
+    </record>
+    

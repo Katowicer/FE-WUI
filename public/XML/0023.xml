@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0023</Id>
+        <Data>2026-12-25</Data>
+        <Mittente>TECH SOLUTIONS</Mittente>
+        <Destinatario>XYZ LTD</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>1870</Imponibile>
+        <Imposta>374</Imposta>
+        <Importo>2244</Importo>
+    </record>
+    

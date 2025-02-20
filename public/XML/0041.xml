@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0041</Id>
+        <Data>2024-04-10</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>PURCHASE ORDER</TipoDocumento>
+        <Descrizione>Software development proposal</Descrizione>
+        <Imponibile>6578</Imponibile>
+        <Imposta>1315</Imposta>
+        <Importo>7893</Importo>
+    </record>
+    

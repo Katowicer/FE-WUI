@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0007</Id>
+        <Data>2024-01-04</Data>
+        <Mittente>TECH SOLUTIONS</Mittente>
+        <Destinatario>JANE DOE</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>5235</Imponibile>
+        <Imposta>1047</Imposta>
+        <Importo>6282</Importo>
+    </record>
+    

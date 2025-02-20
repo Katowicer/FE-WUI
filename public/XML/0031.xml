@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0031</Id>
+        <Data>2025-09-08</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>YOURDAD</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>2964</Imponibile>
+        <Imposta>592</Imposta>
+        <Importo>3556</Importo>
+    </record>
+    

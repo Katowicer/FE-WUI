@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0011</Id>
+        <Data>2025-05-06</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Business agreement</Descrizione>
+        <Imponibile>2328</Imponibile>
+        <Imposta>465</Imposta>
+        <Importo>2793</Importo>
+    </record>
+    

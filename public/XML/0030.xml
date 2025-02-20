@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0030</Id>
+        <Data>2026-03-26</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>JANE DOE</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Software development proposal</Descrizione>
+        <Imponibile>2163</Imponibile>
+        <Imposta>432</Imposta>
+        <Importo>2595</Importo>
+    </record>
+    

@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0089</Id>
+        <Data>2026-07-03</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>JANE DOE</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>2051</Imponibile>
+        <Imposta>410</Imposta>
+        <Importo>2461</Importo>
+    </record>
+    

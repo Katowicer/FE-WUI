@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0062</Id>
+        <Data>2026-10-12</Data>
+        <Mittente>DELIVERY SERVICES</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>9693</Imponibile>
+        <Imposta>1938</Imposta>
+        <Importo>11631</Importo>
+    </record>
+    

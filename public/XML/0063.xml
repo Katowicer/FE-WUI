@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0063</Id>
+        <Data>2026-02-22</Data>
+        <Mittente>ACME CORP</Mittente>
+        <Destinatario>BANK LTD</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>Annual report</Descrizione>
+        <Imponibile>9899</Imponibile>
+        <Imposta>1979</Imposta>
+        <Importo>11878</Importo>
+    </record>
+    

@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0015</Id>
+        <Data>2026-07-18</Data>
+        <Mittente>ACME CORP</Mittente>
+        <Destinatario>BANK LTD</Destinatario>
+        <TipoDocumento>RECEIPT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>9203</Imponibile>
+        <Imposta>1840</Imposta>
+        <Importo>11043</Importo>
+    </record>
+    

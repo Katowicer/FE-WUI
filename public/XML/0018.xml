@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0018</Id>
+        <Data>2024-11-13</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>XYZ LTD</Destinatario>
+        <TipoDocumento>NONE</TipoDocumento>
+        <Descrizione>Annual report</Descrizione>
+        <Imponibile>870</Imponibile>
+        <Imposta>174</Imposta>
+        <Importo>1044</Importo>
+    </record>
+    

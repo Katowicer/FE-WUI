@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0100</Id>
+        <Data>2026-06-11</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>PURCHASE ORDER</TipoDocumento>
+        <Descrizione>Payment for services</Descrizione>
+        <Imponibile>348</Imponibile>
+        <Imposta>69</Imposta>
+        <Importo>417</Importo>
+    </record>
+    

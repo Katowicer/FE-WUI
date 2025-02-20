@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0001</Id>
+        <Data>2024-11-10</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>6761</Imponibile>
+        <Imposta>1352</Imposta>
+        <Importo>8113</Importo>
+    </record>
+    

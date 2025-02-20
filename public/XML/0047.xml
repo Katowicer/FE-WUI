@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0047</Id>
+        <Data>2025-08-04</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>JANE DOE</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>3865</Imponibile>
+        <Imposta>773</Imposta>
+        <Importo>4638</Importo>
+    </record>
+    

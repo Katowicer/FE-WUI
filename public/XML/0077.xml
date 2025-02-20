@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0077</Id>
+        <Data>2026-07-07</Data>
+        <Mittente>COMPANY A</Mittente>
+        <Destinatario>YOURDAD</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Shipment invoice</Descrizione>
+        <Imponibile>4826</Imponibile>
+        <Imposta>965</Imposta>
+        <Importo>5791</Importo>
+    </record>
+    

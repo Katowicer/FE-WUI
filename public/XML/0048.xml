@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0048</Id>
+        <Data>2024-11-03</Data>
+        <Mittente>DELIVERY SERVICES</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Payment for services</Descrizione>
+        <Imponibile>5634</Imponibile>
+        <Imposta>1126</Imposta>
+        <Importo>6760</Importo>
+    </record>
+    

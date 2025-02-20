@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0057</Id>
+        <Data>2024-02-22</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>XYZ LTD</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Shipment invoice</Descrizione>
+        <Imponibile>9156</Imponibile>
+        <Imposta>1831</Imposta>
+        <Importo>10987</Importo>
+    </record>
+    

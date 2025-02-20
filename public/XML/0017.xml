@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0017</Id>
+        <Data>2024-03-07</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>PURCHASE ORDER</TipoDocumento>
+        <Descrizione>SOME DATA</Descrizione>
+        <Imponibile>3240</Imponibile>
+        <Imposta>648</Imposta>
+        <Importo>3888</Importo>
+    </record>
+    

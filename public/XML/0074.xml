@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0074</Id>
+        <Data>2024-11-26</Data>
+        <Mittente>DELIVERY SERVICES</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>5618</Imponibile>
+        <Imposta>1123</Imposta>
+        <Importo>6741</Importo>
+    </record>
+    

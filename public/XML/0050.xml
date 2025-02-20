@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0050</Id>
+        <Data>2025-01-18</Data>
+        <Mittente>JOHN DOE</Mittente>
+        <Destinatario>YOURDAD</Destinatario>
+        <TipoDocumento>CONTRACT</TipoDocumento>
+        <Descrizione>Consulting fee</Descrizione>
+        <Imponibile>7089</Imponibile>
+        <Imposta>1417</Imposta>
+        <Importo>8506</Importo>
+    </record>
+    

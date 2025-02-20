@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0087</Id>
+        <Data>2025-04-08</Data>
+        <Mittente>FINANCE INC</Mittente>
+        <Destinatario>SUPPLY CHAIN CO</Destinatario>
+        <TipoDocumento>INVOICE</TipoDocumento>
+        <Descrizione>Software development proposal</Descrizione>
+        <Imponibile>4040</Imponibile>
+        <Imposta>808</Imposta>
+        <Importo>4848</Importo>
+    </record>
+    

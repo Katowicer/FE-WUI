@@ -1,0 +1,13 @@
+
+    <record>
+        <Id>0010</Id>
+        <Data>2024-06-30</Data>
+        <Mittente>TECH SOLUTIONS</Mittente>
+        <Destinatario>COMPANY B</Destinatario>
+        <TipoDocumento>REPORT</TipoDocumento>
+        <Descrizione>Shipment invoice</Descrizione>
+        <Imponibile>5422</Imponibile>
+        <Imposta>1084</Imposta>
+        <Importo>6506</Importo>
+    </record>
+    
