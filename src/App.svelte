@@ -4,8 +4,8 @@
         type TNavItem,
     } from "./lib/components/ui/Navbar/Navbar.svelte";
 
-    import ricevute from "./lib/data/accoutings_ricevute_test.json" assert { type: "json" };
-    import emesse from "./lib/data/accoutings_emesse_test.json" assert { type: "json" };
+    import ricevute from "./lib/data/mr.json" assert { type: "json" };
+    import emesse from "./lib/data/me.json" assert { type: "json" };
 
     import type { Accouting } from "./DataTable.svelte";
     import DataTable from "./DataTable.svelte";
